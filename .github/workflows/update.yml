@@ -1,9 +1,13 @@
 name: 대시보드 자동 갱신
 
 on:
+  push:
+    paths:
+      - 'Article search.xlsx'
   schedule:
     - cron: '0 23 * * *'
   workflow_dispatch:
+:
 
 jobs:
   update:
